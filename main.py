@@ -143,7 +143,7 @@ if st.button("Submit and Download Quiz Results"):
     with open(pdf_filename, "rb") as file:
         reader = PdfWriter()
         reader.appendPagesFromReader(file)
-        reader.encrypt("your_password")  # Set your desired password here
+        reader.encrypt("aimlassesment")  # Set your desired password here
         with open("protected_quiz_results.pdf", "wb") as protected_file:
             reader.write(protected_file)
 
